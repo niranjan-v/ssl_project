@@ -1,0 +1,47 @@
+To install the requirements, navigate to project-2 directory in a terminal and run:
+pip install -r requirements.txt
+
+To create a database, run: (Incase you delete the database already present)
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 slot_setup.py
+Then run
+python3 manage.py runserver
+
+You can now view the website by clicking on the server address.
+
+
+
+Some user credentials in this database:
+student:
+username:kalyan
+passwrd:niranjan
+
+Instructors:
+username:suraj
+password:niranjan
+
+Admin:
+username:admin
+password:adminadmin
+
+
+Citations:
+for generating calendar:
+https://djangosnippets.org/snippets/2464/
+for events class:
+https://pypi.python.org/pypi/django-simple-events/1.2
+
+https://simpleisbetterthancomplex.com/ --extensively used, to learn django, build basic structure
+https://stackoverflow.com/questions/25841712/django-best-approach-for-creating-multiple-type-users
+https://stackoverflow.com/questions/23315337/django-register-extended-user-model
+https://django-generic-ratings.readthedocs.io/en/latest/forms_api.html#module-ratings.forms
+https://github.com/weluse/django-updown/blob/master/README.md --django updown package
+https://simpleisbetterthancomplex.com/tutorial/2016/11/28/how-to-filter-querysets-dynamically.html
+https://stackoverflow.com/questions/33643239/accessing-an-element-in-django-for-loop
+https://stackoverflow.com/questions/38739422/django-error-render-to-response-got-an-unexpected-keyword-argument-context-i
+https://stackoverflow.com/questions/10180764/django-auth-login-problems
+Used the official django tutorials to learn the basics
+
+Gitlab link for our project:
+https://gitlab.com/niranjanv093/project-2

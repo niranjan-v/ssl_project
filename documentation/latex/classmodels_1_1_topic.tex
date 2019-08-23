@@ -1,0 +1,77 @@
+\hypertarget{classmodels_1_1_topic}{}\section{models.\+Topic Class Reference}
+\label{classmodels_1_1_topic}\index{models.\+Topic@{models.\+Topic}}
+
+
+model for question in discussion forum  
+
+
+
+
+Inheritance diagram for models.\+Topic\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Topic\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_topic_acfda0b304b96b45ac8afce34db053fc7}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_topic_acd7ecf27aa6c6ec4aeb1a1e2884a9f43}{name} = models.\+Char\+Field(max\+\_\+length=300,default=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_topic_a4eb8fa5c1ed142be16d2c318c727d4c0}{brief} = models.\+Char\+Field(max\+\_\+length=30, default=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_topic_a18646db3f9d9db5f01907841d02b08b0}{created\+\_\+at} = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)
+\item 
+\hyperlink{classmodels_1_1_topic_ac20c528d9944ec119f7c6ae797a44bd5}{board} = models.\+Foreign\+Key(\hyperlink{classmodels_1_1_board}{Board})
+\item 
+\hyperlink{classmodels_1_1_topic_a1ae6fd4bdbc0bde3b0da3f648a839616}{starter} = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+model for question in discussion forum 
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Topic@{models\+::\+Topic}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Topic.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_topic_acfda0b304b96b45ac8afce34db053fc7}{}\label{classmodels_1_1_topic_acfda0b304b96b45ac8afce34db053fc7}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of topic 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Topic@{models\+::\+Topic}!board@{board}}
+\index{board@{board}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{board}{board}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Topic.\+board = models.\+Foreign\+Key({\bf Board})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_topic_ac20c528d9944ec119f7c6ae797a44bd5}{}\label{classmodels_1_1_topic_ac20c528d9944ec119f7c6ae797a44bd5}
+\index{models\+::\+Topic@{models\+::\+Topic}!brief@{brief}}
+\index{brief@{brief}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{brief}{brief}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Topic.\+brief = models.\+Char\+Field(max\+\_\+length=30, default=\textquotesingle{}\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_topic_a4eb8fa5c1ed142be16d2c318c727d4c0}{}\label{classmodels_1_1_topic_a4eb8fa5c1ed142be16d2c318c727d4c0}
+\index{models\+::\+Topic@{models\+::\+Topic}!created\+\_\+at@{created\+\_\+at}}
+\index{created\+\_\+at@{created\+\_\+at}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{created\+\_\+at}{created_at}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Topic.\+created\+\_\+at = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_topic_a18646db3f9d9db5f01907841d02b08b0}{}\label{classmodels_1_1_topic_a18646db3f9d9db5f01907841d02b08b0}
+\index{models\+::\+Topic@{models\+::\+Topic}!name@{name}}
+\index{name@{name}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Topic.\+name = models.\+Char\+Field(max\+\_\+length=300,default=\textquotesingle{}\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_topic_acd7ecf27aa6c6ec4aeb1a1e2884a9f43}{}\label{classmodels_1_1_topic_acd7ecf27aa6c6ec4aeb1a1e2884a9f43}
+\index{models\+::\+Topic@{models\+::\+Topic}!starter@{starter}}
+\index{starter@{starter}!models\+::\+Topic@{models\+::\+Topic}}
+\subsubsection[{\texorpdfstring{starter}{starter}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Topic.\+starter = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_topic_a1ae6fd4bdbc0bde3b0da3f648a839616}{}\label{classmodels_1_1_topic_a1ae6fd4bdbc0bde3b0da3f648a839616}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

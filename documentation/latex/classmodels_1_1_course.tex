@@ -1,0 +1,73 @@
+\hypertarget{classmodels_1_1_course}{}\section{models.\+Course Class Reference}
+\label{classmodels_1_1_course}\index{models.\+Course@{models.\+Course}}
+
+
+Inheritance diagram for models.\+Course\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Course\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_course_acc64e338b1a64efea3a2701f6aa689ae}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classmodels_1_1_course_a0cbedfae72ead97710ed0be57521f964}{get\+\_\+absolute\+\_\+url} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_course_a4b8a4fdabc8a2f86a43656880362f660}{name} = models.\+Char\+Field(max\+\_\+length=30, unique=True)
+\item 
+\hyperlink{classmodels_1_1_course_ab197e537089d51e5ea68f2963cf97bfd}{description} = models.\+Char\+Field(max\+\_\+length=100)
+\item 
+\hyperlink{classmodels_1_1_course_a2f4f8f2e0bb55a8304baa843f5e0cbc0}{teacher} = models.\+Many\+To\+Many\+Field(\hyperlink{classmodels_1_1_instructor}{Instructor})
+\item 
+\hyperlink{classmodels_1_1_course_a0eeef35d1646b968dae5758f9e3c526a}{slot} = models.\+Many\+To\+Many\+Field(\hyperlink{classmodels_1_1_slot}{Slot})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Course@{models\+::\+Course}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Course.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_course_acc64e338b1a64efea3a2701f6aa689ae}{}\label{classmodels_1_1_course_acc64e338b1a64efea3a2701f6aa689ae}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of course 
+\end{DoxyReturn}
+\index{models\+::\+Course@{models\+::\+Course}!get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}}
+\index{get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{get\+\_\+absolute\+\_\+url(self)}{get_absolute_url(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Course.\+get\+\_\+absolute\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_course_a0cbedfae72ead97710ed0be57521f964}{}\label{classmodels_1_1_course_a0cbedfae72ead97710ed0be57521f964}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Course@{models\+::\+Course}!description@{description}}
+\index{description@{description}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Course.\+description = models.\+Char\+Field(max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_course_ab197e537089d51e5ea68f2963cf97bfd}{}\label{classmodels_1_1_course_ab197e537089d51e5ea68f2963cf97bfd}
+\index{models\+::\+Course@{models\+::\+Course}!name@{name}}
+\index{name@{name}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Course.\+name = models.\+Char\+Field(max\+\_\+length=30, unique=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_course_a4b8a4fdabc8a2f86a43656880362f660}{}\label{classmodels_1_1_course_a4b8a4fdabc8a2f86a43656880362f660}
+\index{models\+::\+Course@{models\+::\+Course}!slot@{slot}}
+\index{slot@{slot}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{slot}{slot}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Course.\+slot = models.\+Many\+To\+Many\+Field({\bf Slot})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_course_a0eeef35d1646b968dae5758f9e3c526a}{}\label{classmodels_1_1_course_a0eeef35d1646b968dae5758f9e3c526a}
+\index{models\+::\+Course@{models\+::\+Course}!teacher@{teacher}}
+\index{teacher@{teacher}!models\+::\+Course@{models\+::\+Course}}
+\subsubsection[{\texorpdfstring{teacher}{teacher}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Course.\+teacher = models.\+Many\+To\+Many\+Field({\bf Instructor})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_course_a2f4f8f2e0bb55a8304baa843f5e0cbc0}{}\label{classmodels_1_1_course_a2f4f8f2e0bb55a8304baa843f5e0cbc0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

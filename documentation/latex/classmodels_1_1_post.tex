@@ -1,0 +1,74 @@
+\hypertarget{classmodels_1_1_post}{}\section{models.\+Post Class Reference}
+\label{classmodels_1_1_post}\index{models.\+Post@{models.\+Post}}
+
+
+model for student\textquotesingle{}s reply in discussion forum  
+
+
+
+
+Inheritance diagram for models.\+Post\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Post\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmodels_1_1_post_1_1_meta}{Meta}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmodels_1_1_post_1_1_meta}{Meta} class for ordering based on number of likes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_post_aafdd083965c5d3782b716df6499db352}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_post_ad66c792a53f3c3e39cac8e7c2efec323}{message} = models.\+Text\+Field(max\+\_\+length=4000)
+\item 
+\hyperlink{classmodels_1_1_post_a8b375c00f4324d267ef2ad27cf603c8c}{topic} = models.\+Foreign\+Key(\hyperlink{classmodels_1_1_topic}{Topic})
+\item 
+\hyperlink{classmodels_1_1_post_a81a26a5f331115ff024de5ae2d18f9a9}{created\+\_\+at} = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)
+\item 
+\hyperlink{classmodels_1_1_post_a71bda3ed7d25e7ab89839a1bd8f35e8d}{author} = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\hyperlink{classmodels_1_1_post_ade8df96ef07130fe7304225c1d1f326d}{rating} = Rating\+Field(can\+\_\+change\+\_\+vote=True)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+model for student\textquotesingle{}s reply in discussion forum 
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Post@{models\+::\+Post}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Post.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_post_aafdd083965c5d3782b716df6499db352}{}\label{classmodels_1_1_post_aafdd083965c5d3782b716df6499db352}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Post@{models\+::\+Post}!author@{author}}
+\index{author@{author}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{author}{author}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Post.\+author = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_post_a71bda3ed7d25e7ab89839a1bd8f35e8d}{}\label{classmodels_1_1_post_a71bda3ed7d25e7ab89839a1bd8f35e8d}
+\index{models\+::\+Post@{models\+::\+Post}!created\+\_\+at@{created\+\_\+at}}
+\index{created\+\_\+at@{created\+\_\+at}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{created\+\_\+at}{created_at}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Post.\+created\+\_\+at = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_post_a81a26a5f331115ff024de5ae2d18f9a9}{}\label{classmodels_1_1_post_a81a26a5f331115ff024de5ae2d18f9a9}
+\index{models\+::\+Post@{models\+::\+Post}!message@{message}}
+\index{message@{message}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{message}{message}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Post.\+message = models.\+Text\+Field(max\+\_\+length=4000)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_post_ad66c792a53f3c3e39cac8e7c2efec323}{}\label{classmodels_1_1_post_ad66c792a53f3c3e39cac8e7c2efec323}
+\index{models\+::\+Post@{models\+::\+Post}!rating@{rating}}
+\index{rating@{rating}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{rating}{rating}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Post.\+rating = Rating\+Field(can\+\_\+change\+\_\+vote=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_post_ade8df96ef07130fe7304225c1d1f326d}{}\label{classmodels_1_1_post_ade8df96ef07130fe7304225c1d1f326d}
+\index{models\+::\+Post@{models\+::\+Post}!topic@{topic}}
+\index{topic@{topic}!models\+::\+Post@{models\+::\+Post}}
+\subsubsection[{\texorpdfstring{topic}{topic}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Post.\+topic = models.\+Foreign\+Key({\bf Topic})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_post_a8b375c00f4324d267ef2ad27cf603c8c}{}\label{classmodels_1_1_post_a8b375c00f4324d267ef2ad27cf603c8c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+\hypertarget{classapps_1_1_tcourse_config}{}\section{apps.\+Tcourse\+Config Class Reference}
+\label{classapps_1_1_tcourse_config}\index{apps.\+Tcourse\+Config@{apps.\+Tcourse\+Config}}
+
+
+Inheritance diagram for apps.\+Tcourse\+Config\+:
+% FIG 0
+
+
+Collaboration diagram for apps.\+Tcourse\+Config\+:
+% FIG 1
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classapps_1_1_tcourse_config_a17df2b3ab056327658f08a597ed1473f}{name} = \textquotesingle{}tcourse\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{apps\+::\+Tcourse\+Config@{apps\+::\+Tcourse\+Config}!name@{name}}
+\index{name@{name}!apps\+::\+Tcourse\+Config@{apps\+::\+Tcourse\+Config}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}string apps.\+Tcourse\+Config.\+name = \textquotesingle{}tcourse\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classapps_1_1_tcourse_config_a17df2b3ab056327658f08a597ed1473f}{}\label{classapps_1_1_tcourse_config_a17df2b3ab056327658f08a597ed1473f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{apps_8py}{apps.\+py}\end{DoxyCompactItemize}

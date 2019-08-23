@@ -1,0 +1,83 @@
+\hypertarget{classmodels_1_1_feedback}{}\section{models.\+Feedback Class Reference}
+\label{classmodels_1_1_feedback}\index{models.\+Feedback@{models.\+Feedback}}
+
+
+The model for feedback.  
+
+
+
+
+Inheritance diagram for models.\+Feedback\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Feedback\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_feedback_afa35cf0a14d2b631a40a01d7d3847137}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classmodels_1_1_feedback_a0716162823aa511e5c1beea11d39b1f0}{is\+\_\+due} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_feedback_a752d4d5603d15c1387803065c603639d}{feedback\+\_\+name} = models.\+Char\+Field(max\+\_\+length = 20,default=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_feedback_acbdb0048ac21fa284ca76e2c4e7200ec}{deadline\+\_\+date} = models.\+Date\+Field(default=datetime.\+date.\+today)
+\item 
+\hyperlink{classmodels_1_1_feedback_ad72519619c1896899425e287a26d8f93}{deadline\+\_\+time} = models.\+Time\+Field(default=\textquotesingle{}23\+:59\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_feedback_a18a97e4e0c860dd1528dc5b515f417f5}{course} = models.\+Foreign\+Key(\hyperlink{classmodels_1_1_course}{Course}, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE, default=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The model for feedback. 
+
+Doesn\textquotesingle{}t contain answers. 
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Feedback.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_feedback_afa35cf0a14d2b631a40a01d7d3847137}{}\label{classmodels_1_1_feedback_afa35cf0a14d2b631a40a01d7d3847137}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!is\+\_\+due@{is\+\_\+due}}
+\index{is\+\_\+due@{is\+\_\+due}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{is\+\_\+due(self)}{is_due(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Feedback.\+is\+\_\+due (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_feedback_a0716162823aa511e5c1beea11d39b1f0}{}\label{classmodels_1_1_feedback_a0716162823aa511e5c1beea11d39b1f0}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if this feedback is due or not 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!course@{course}}
+\index{course@{course}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{course}{course}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Feedback.\+course = models.\+Foreign\+Key({\bf Course}, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE, default=\textquotesingle{}\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_feedback_a18a97e4e0c860dd1528dc5b515f417f5}{}\label{classmodels_1_1_feedback_a18a97e4e0c860dd1528dc5b515f417f5}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!deadline\+\_\+date@{deadline\+\_\+date}}
+\index{deadline\+\_\+date@{deadline\+\_\+date}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+date}{deadline_date}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Feedback.\+deadline\+\_\+date = models.\+Date\+Field(default=datetime.\+date.\+today)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_feedback_acbdb0048ac21fa284ca76e2c4e7200ec}{}\label{classmodels_1_1_feedback_acbdb0048ac21fa284ca76e2c4e7200ec}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!deadline\+\_\+time@{deadline\+\_\+time}}
+\index{deadline\+\_\+time@{deadline\+\_\+time}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+time}{deadline_time}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Feedback.\+deadline\+\_\+time = models.\+Time\+Field(default=\textquotesingle{}23\+:59\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_feedback_ad72519619c1896899425e287a26d8f93}{}\label{classmodels_1_1_feedback_ad72519619c1896899425e287a26d8f93}
+\index{models\+::\+Feedback@{models\+::\+Feedback}!feedback\+\_\+name@{feedback\+\_\+name}}
+\index{feedback\+\_\+name@{feedback\+\_\+name}!models\+::\+Feedback@{models\+::\+Feedback}}
+\subsubsection[{\texorpdfstring{feedback\+\_\+name}{feedback_name}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Feedback.\+feedback\+\_\+name = models.\+Char\+Field(max\+\_\+length = 20,default=\textquotesingle{}\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_feedback_a752d4d5603d15c1387803065c603639d}{}\label{classmodels_1_1_feedback_a752d4d5603d15c1387803065c603639d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

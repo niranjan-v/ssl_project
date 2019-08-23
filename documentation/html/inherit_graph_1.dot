@@ -1,0 +1,23 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ModelForm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="forms.DeadlineForm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_deadline_form.html",tooltip="The form for Adding events, the fields in the Meta class are shown in the form. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="forms.DocumentForm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_document_form.html",tooltip="The form for Document upload, the fields in the Meta class are shown in the form. ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="forms.DriveForm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_drive_form.html",tooltip="The form for Drive upload, the fields in the Meta class are shown in the form. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="forms.EventEdit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_event_edit.html",tooltip="The form for Ediiting event, the fields in the Meta class are shown in the form. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="forms.InstructorEdit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_instructor_edit.html",tooltip="The form for Editting Instructor profile, the fields in the Meta class are shown in the form..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="forms.InstSignUpForm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_inst_sign_up_form.html",tooltip="The form for Instructor signup, the fields in the Meta class are shown in the form. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="forms.StudentEdit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_student_edit.html",tooltip="The form for Editing Student profile, the fields in the Meta class are shown in the form..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="forms.StudentSignUpForm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classforms_1_1_student_sign_up_form.html",tooltip="The form for student signup, the fields in the Meta class are shown in the form. "];
+}

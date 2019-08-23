@@ -1,0 +1,64 @@
+\hypertarget{models_8py}{}\section{/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/models.py File Reference}
+\label{models_8py}\index{/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/models.\+py@{/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/models.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmodels_1_1_instructor}{models.\+Instructor}
+\begin{DoxyCompactList}\small\item\em one-\/one extension of django\textquotesingle{}s User model, for instructors \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_slot}{models.\+Slot}
+\begin{DoxyCompactList}\small\item\em slot model used in timetable \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_course}{models.\+Course}
+\item 
+class \hyperlink{classmodels_1_1_student}{models.\+Student}
+\begin{DoxyCompactList}\small\item\em one-\/one extension of django\textquotesingle{}s User model, for students \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_board}{models.\+Board}
+\begin{DoxyCompactList}\small\item\em the model for discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_topic}{models.\+Topic}
+\begin{DoxyCompactList}\small\item\em model for question in discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_ipost}{models.\+Ipost}
+\begin{DoxyCompactList}\small\item\em model for instructor\textquotesingle{}s reply in discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_post}{models.\+Post}
+\begin{DoxyCompactList}\small\item\em model for student\textquotesingle{}s reply in discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_post_1_1_meta}{models.\+Post.\+Meta}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmodels_1_1_post_1_1_meta}{Meta} class for ordering based on number of likes. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_document}{models.\+Document}
+\begin{DoxyCompactList}\small\item\em model for file storage \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_personaldrive}{models.\+Personaldrive}
+\begin{DoxyCompactList}\small\item\em model for personal drive of user \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_events}{models.\+Events}
+\begin{DoxyCompactList}\small\item\em model for \hyperlink{classmodels_1_1_events}{Events} of a course \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_events_1_1_meta}{models.\+Events.\+Meta}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmodels_1_1_events_1_1_meta}{Meta} class for ordering based on deadline\+\_\+time. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_feedback}{models.\+Feedback}
+\begin{DoxyCompactList}\small\item\em The model for feedback. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_rating_question}{models.\+Rating\+Question}
+\begin{DoxyCompactList}\small\item\em The model for rating questions. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_rating_answer}{models.\+Rating\+Answer}
+\begin{DoxyCompactList}\small\item\em The model for rating answers. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_subjective_question}{models.\+Subjective\+Question}
+\begin{DoxyCompactList}\small\item\em The model for subjective questions. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_subjective_answer}{models.\+Subjective\+Answer}
+\begin{DoxyCompactList}\small\item\em The model for subjective answers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemodels}{models}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacemodels_a4ecad2d514baa0e7ae42b71e3f67b824}{models.\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemodels_a9ef45fab8b6b74563fec302f2c099493}{models.\+message} = models.\+Text\+Field(max\+\_\+length=4000)
+\item 
+\hyperlink{namespacemodels_ac6c97c7b2843a1f154a040112c9cfeb0}{models.\+topic} = models.\+Foreign\+Key(Topic)
+\item 
+\hyperlink{namespacemodels_a9bb14e7932cf7d4a1edb2cbd5f0a0a07}{models.\+created\+\_\+at} = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)
+\item 
+\hyperlink{namespacemodels_af792ae344613dd8aefd3747f5f3eddc7}{models.\+author} = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\hyperlink{namespacemodels_abdb4a4ceda0315525a6b6053f76cca87}{models.\+rating} = Rating\+Field(can\+\_\+change\+\_\+vote=True)
+\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{namespacemodels}{}\section{models Namespace Reference}
+\label{namespacemodels}\index{models@{models}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmodels_1_1_board}{Board}
+\begin{DoxyCompactList}\small\item\em the model for discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_course}{Course}
+\item 
+class \hyperlink{classmodels_1_1_document}{Document}
+\begin{DoxyCompactList}\small\item\em model for file storage \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_events}{Events}
+\begin{DoxyCompactList}\small\item\em model for \hyperlink{classmodels_1_1_events}{Events} of a course \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_feedback}{Feedback}
+\begin{DoxyCompactList}\small\item\em The model for feedback. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_instructor}{Instructor}
+\begin{DoxyCompactList}\small\item\em one-\/one extension of django\textquotesingle{}s User model, for instructors \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_ipost}{Ipost}
+\begin{DoxyCompactList}\small\item\em model for instructor\textquotesingle{}s reply in discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_personaldrive}{Personaldrive}
+\begin{DoxyCompactList}\small\item\em model for personal drive of user \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_post}{Post}
+\begin{DoxyCompactList}\small\item\em model for student\textquotesingle{}s reply in discussion forum \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_rating_answer}{Rating\+Answer}
+\begin{DoxyCompactList}\small\item\em The model for rating answers. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_rating_question}{Rating\+Question}
+\begin{DoxyCompactList}\small\item\em The model for rating questions. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_slot}{Slot}
+\begin{DoxyCompactList}\small\item\em slot model used in timetable \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_student}{Student}
+\begin{DoxyCompactList}\small\item\em one-\/one extension of django\textquotesingle{}s User model, for students \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_subjective_answer}{Subjective\+Answer}
+\begin{DoxyCompactList}\small\item\em The model for subjective answers. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_subjective_question}{Subjective\+Question}
+\begin{DoxyCompactList}\small\item\em The model for subjective questions. \end{DoxyCompactList}\item 
+class \hyperlink{classmodels_1_1_topic}{Topic}
+\begin{DoxyCompactList}\small\item\em model for question in discussion forum \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacemodels_a4ecad2d514baa0e7ae42b71e3f67b824}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemodels_a9ef45fab8b6b74563fec302f2c099493}{message} = models.\+Text\+Field(max\+\_\+length=4000)
+\item 
+\hyperlink{namespacemodels_ac6c97c7b2843a1f154a040112c9cfeb0}{topic} = models.\+Foreign\+Key(\hyperlink{classmodels_1_1_topic}{Topic})
+\item 
+\hyperlink{namespacemodels_a9bb14e7932cf7d4a1edb2cbd5f0a0a07}{created\+\_\+at} = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)
+\item 
+\hyperlink{namespacemodels_af792ae344613dd8aefd3747f5f3eddc7}{author} = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\hyperlink{namespacemodels_abdb4a4ceda0315525a6b6053f76cca87}{rating} = Rating\+Field(can\+\_\+change\+\_\+vote=True)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{models@{models}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models@{models}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemodels_a4ecad2d514baa0e7ae42b71e3f67b824}{}\label{namespacemodels_a4ecad2d514baa0e7ae42b71e3f67b824}
+
+
+\subsection{Variable Documentation}
+\index{models@{models}!author@{author}}
+\index{author@{author}!models@{models}}
+\subsubsection[{\texorpdfstring{author}{author}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+author = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)}\hypertarget{namespacemodels_af792ae344613dd8aefd3747f5f3eddc7}{}\label{namespacemodels_af792ae344613dd8aefd3747f5f3eddc7}
+\index{models@{models}!created\+\_\+at@{created\+\_\+at}}
+\index{created\+\_\+at@{created\+\_\+at}!models@{models}}
+\subsubsection[{\texorpdfstring{created\+\_\+at}{created_at}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+created\+\_\+at = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)}\hypertarget{namespacemodels_a9bb14e7932cf7d4a1edb2cbd5f0a0a07}{}\label{namespacemodels_a9bb14e7932cf7d4a1edb2cbd5f0a0a07}
+\index{models@{models}!message@{message}}
+\index{message@{message}!models@{models}}
+\subsubsection[{\texorpdfstring{message}{message}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+message = models.\+Text\+Field(max\+\_\+length=4000)}\hypertarget{namespacemodels_a9ef45fab8b6b74563fec302f2c099493}{}\label{namespacemodels_a9ef45fab8b6b74563fec302f2c099493}
+\index{models@{models}!rating@{rating}}
+\index{rating@{rating}!models@{models}}
+\subsubsection[{\texorpdfstring{rating}{rating}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+rating = Rating\+Field(can\+\_\+change\+\_\+vote=True)}\hypertarget{namespacemodels_abdb4a4ceda0315525a6b6053f76cca87}{}\label{namespacemodels_abdb4a4ceda0315525a6b6053f76cca87}
+\index{models@{models}!topic@{topic}}
+\index{topic@{topic}!models@{models}}
+\subsubsection[{\texorpdfstring{topic}{topic}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+topic = models.\+Foreign\+Key({\bf Topic})}\hypertarget{namespacemodels_ac6c97c7b2843a1f154a040112c9cfeb0}{}\label{namespacemodels_ac6c97c7b2843a1f154a040112c9cfeb0}

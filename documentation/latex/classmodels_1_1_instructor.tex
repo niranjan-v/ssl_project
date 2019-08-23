@@ -1,0 +1,118 @@
+\hypertarget{classmodels_1_1_instructor}{}\section{models.\+Instructor Class Reference}
+\label{classmodels_1_1_instructor}\index{models.\+Instructor@{models.\+Instructor}}
+
+
+one-\/one extension of django\textquotesingle{}s User model, for instructors  
+
+
+
+
+Inheritance diagram for models.\+Instructor\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Instructor\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_instructor_a8a9bbb348fdc403a46ceb6e1438b13a1}{filename} (self)
+\item 
+def \hyperlink{classmodels_1_1_instructor_a3b1665694aa60e50612450f6267aac20}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classmodels_1_1_instructor_aba8aaef90c2431ff135737b1a15cfa82}{get\+\_\+absolute\+\_\+url} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_instructor_aed24718cc72d6650dead072556e1d73b}{user} = models.\+One\+To\+One\+Field(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\hyperlink{classmodels_1_1_instructor_ad4d39e7d7fffd28664f69c2588e32ae9}{fullname} = models.\+Char\+Field(max\+\_\+length=30,default=\textquotesingle{}\textquotesingle{},blank=True )
+\item 
+\hyperlink{classmodels_1_1_instructor_abccce848362944335f1b25af2bc0f818}{description} = models.\+Char\+Field(max\+\_\+length=150,default=\textquotesingle{}\textquotesingle{},blank=True )
+\item 
+\hyperlink{classmodels_1_1_instructor_aa7ed2398a62decccb8795175fdbede0d}{is\+\_\+student} = models.\+Boolean\+Field(default=False)
+\item 
+\hyperlink{classmodels_1_1_instructor_abd5281a880321e409a4e0a490c87d4c2}{website} = models.\+U\+R\+L\+Field(default=\textquotesingle{}\textquotesingle{},blank=True )
+\item 
+\hyperlink{classmodels_1_1_instructor_a85ca94a7dc5ad5e80a822d9e83f5aec0}{phone} = models.\+Integer\+Field(null=\textquotesingle{}True\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_instructor_ac0c4964afe9173812d1579c0ec63f229}{city} = models.\+Char\+Field(max\+\_\+length=100, default=\textquotesingle{}\textquotesingle{},blank=True)
+\item 
+\hyperlink{classmodels_1_1_instructor_ab6b343db0d24b97cb99f727597b52f94}{image} = models.\+Image\+Field(upload\+\_\+to=\textquotesingle{}documents/\textquotesingle{},default = \textquotesingle{}default\+\_\+user.\+png\textquotesingle{},blank=True )
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+one-\/one extension of django\textquotesingle{}s User model, for instructors 
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Instructor.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_instructor_a3b1665694aa60e50612450f6267aac20}{}\label{classmodels_1_1_instructor_a3b1665694aa60e50612450f6267aac20}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of user 
+\end{DoxyReturn}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!filename@{filename}}
+\index{filename@{filename}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{filename(self)}{filename(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Instructor.\+filename (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_instructor_a8a9bbb348fdc403a46ceb6e1438b13a1}{}\label{classmodels_1_1_instructor_a8a9bbb348fdc403a46ceb6e1438b13a1}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of the image file 
+\end{DoxyReturn}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}}
+\index{get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{get\+\_\+absolute\+\_\+url(self)}{get_absolute_url(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Instructor.\+get\+\_\+absolute\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_instructor_aba8aaef90c2431ff135737b1a15cfa82}{}\label{classmodels_1_1_instructor_aba8aaef90c2431ff135737b1a15cfa82}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!city@{city}}
+\index{city@{city}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{city}{city}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+city = models.\+Char\+Field(max\+\_\+length=100, default=\textquotesingle{}\textquotesingle{},blank=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_ac0c4964afe9173812d1579c0ec63f229}{}\label{classmodels_1_1_instructor_ac0c4964afe9173812d1579c0ec63f229}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!description@{description}}
+\index{description@{description}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+description = models.\+Char\+Field(max\+\_\+length=150,default=\textquotesingle{}\textquotesingle{},blank=True )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_abccce848362944335f1b25af2bc0f818}{}\label{classmodels_1_1_instructor_abccce848362944335f1b25af2bc0f818}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!fullname@{fullname}}
+\index{fullname@{fullname}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{fullname}{fullname}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+fullname = models.\+Char\+Field(max\+\_\+length=30,default=\textquotesingle{}\textquotesingle{},blank=True )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_ad4d39e7d7fffd28664f69c2588e32ae9}{}\label{classmodels_1_1_instructor_ad4d39e7d7fffd28664f69c2588e32ae9}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!image@{image}}
+\index{image@{image}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{image}{image}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+image = models.\+Image\+Field(upload\+\_\+to=\textquotesingle{}documents/\textquotesingle{},default = \textquotesingle{}default\+\_\+user.\+png\textquotesingle{},blank=True )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_ab6b343db0d24b97cb99f727597b52f94}{}\label{classmodels_1_1_instructor_ab6b343db0d24b97cb99f727597b52f94}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!is\+\_\+student@{is\+\_\+student}}
+\index{is\+\_\+student@{is\+\_\+student}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{is\+\_\+student}{is_student}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+is\+\_\+student = models.\+Boolean\+Field(default=False)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_aa7ed2398a62decccb8795175fdbede0d}{}\label{classmodels_1_1_instructor_aa7ed2398a62decccb8795175fdbede0d}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!phone@{phone}}
+\index{phone@{phone}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{phone}{phone}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+phone = models.\+Integer\+Field(null=\textquotesingle{}True\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_a85ca94a7dc5ad5e80a822d9e83f5aec0}{}\label{classmodels_1_1_instructor_a85ca94a7dc5ad5e80a822d9e83f5aec0}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!user@{user}}
+\index{user@{user}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{user}{user}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+user = models.\+One\+To\+One\+Field(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_aed24718cc72d6650dead072556e1d73b}{}\label{classmodels_1_1_instructor_aed24718cc72d6650dead072556e1d73b}
+\index{models\+::\+Instructor@{models\+::\+Instructor}!website@{website}}
+\index{website@{website}!models\+::\+Instructor@{models\+::\+Instructor}}
+\subsubsection[{\texorpdfstring{website}{website}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Instructor.\+website = models.\+U\+R\+L\+Field(default=\textquotesingle{}\textquotesingle{},blank=True )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_instructor_abd5281a880321e409a4e0a490c87d4c2}{}\label{classmodels_1_1_instructor_abd5281a880321e409a4e0a490c87d4c2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

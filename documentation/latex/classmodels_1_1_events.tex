@@ -1,0 +1,108 @@
+\hypertarget{classmodels_1_1_events}{}\section{models.\+Events Class Reference}
+\label{classmodels_1_1_events}\index{models.\+Events@{models.\+Events}}
+
+
+model for \hyperlink{classmodels_1_1_events}{Events} of a course  
+
+
+
+
+Inheritance diagram for models.\+Events\+:
+% FIG 0
+
+
+Collaboration diagram for models.\+Events\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmodels_1_1_events_1_1_meta}{Meta}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmodels_1_1_events_1_1_meta}{Meta} class for ordering based on deadline\+\_\+time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmodels_1_1_events_a58dfd43e6d72760608ff5404201666e0}{get\+\_\+absolute\+\_\+url} (self)
+\item 
+def \hyperlink{classmodels_1_1_events_af85d4f84ac610bb82415c8b4dd493970}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classmodels_1_1_events_afd74f38f5189c12fbd4c98c0f4b2ec1a}{is\+\_\+due} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodels_1_1_events_ae52223e512507d0807e70f52a424fe4a}{name} = models.\+Char\+Field(max\+\_\+length=50)
+\item 
+\hyperlink{classmodels_1_1_events_a5c90506df33c4428aaed6955ccc65797}{course} = models.\+Foreign\+Key(\hyperlink{classmodels_1_1_course}{Course},on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\hyperlink{classmodels_1_1_events_a3c992db71af6338f28f5a80401ede6e4}{deadline\+\_\+date} = models.\+Date\+Field(default=datetime.\+date.\+today)
+\item 
+\hyperlink{classmodels_1_1_events_a9a31387cf1b90bea105100b320a8b6ee}{deadline\+\_\+time} = models.\+Time\+Field(default=\textquotesingle{}23\+:59\textquotesingle{})
+\item 
+\hyperlink{classmodels_1_1_events_a3f6fb39bf32a2b2c71f3f753be62db2e}{description} = models.\+Char\+Field(max\+\_\+length=255, blank=True)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+model for \hyperlink{classmodels_1_1_events}{Events} of a course 
+
+\subsection{Member Function Documentation}
+\index{models\+::\+Events@{models\+::\+Events}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Events.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_events_af85d4f84ac610bb82415c8b4dd493970}{}\label{classmodels_1_1_events_af85d4f84ac610bb82415c8b4dd493970}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of event 
+\end{DoxyReturn}
+\index{models\+::\+Events@{models\+::\+Events}!get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}}
+\index{get\+\_\+absolute\+\_\+url@{get\+\_\+absolute\+\_\+url}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{get\+\_\+absolute\+\_\+url(self)}{get_absolute_url(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Events.\+get\+\_\+absolute\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_events_a58dfd43e6d72760608ff5404201666e0}{}\label{classmodels_1_1_events_a58dfd43e6d72760608ff5404201666e0}
+\index{models\+::\+Events@{models\+::\+Events}!is\+\_\+due@{is\+\_\+due}}
+\index{is\+\_\+due@{is\+\_\+due}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{is\+\_\+due(self)}{is_due(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def models.\+Events.\+is\+\_\+due (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodels_1_1_events_afd74f38f5189c12fbd4c98c0f4b2ec1a}{}\label{classmodels_1_1_events_afd74f38f5189c12fbd4c98c0f4b2ec1a}
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the event is due or not 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{models\+::\+Events@{models\+::\+Events}!course@{course}}
+\index{course@{course}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{course}{course}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Events.\+course = models.\+Foreign\+Key({\bf Course},on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_events_a5c90506df33c4428aaed6955ccc65797}{}\label{classmodels_1_1_events_a5c90506df33c4428aaed6955ccc65797}
+\index{models\+::\+Events@{models\+::\+Events}!deadline\+\_\+date@{deadline\+\_\+date}}
+\index{deadline\+\_\+date@{deadline\+\_\+date}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+date}{deadline_date}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Events.\+deadline\+\_\+date = models.\+Date\+Field(default=datetime.\+date.\+today)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_events_a3c992db71af6338f28f5a80401ede6e4}{}\label{classmodels_1_1_events_a3c992db71af6338f28f5a80401ede6e4}
+\index{models\+::\+Events@{models\+::\+Events}!deadline\+\_\+time@{deadline\+\_\+time}}
+\index{deadline\+\_\+time@{deadline\+\_\+time}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+time}{deadline_time}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Events.\+deadline\+\_\+time = models.\+Time\+Field(default=\textquotesingle{}23\+:59\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_events_a9a31387cf1b90bea105100b320a8b6ee}{}\label{classmodels_1_1_events_a9a31387cf1b90bea105100b320a8b6ee}
+\index{models\+::\+Events@{models\+::\+Events}!description@{description}}
+\index{description@{description}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Events.\+description = models.\+Char\+Field(max\+\_\+length=255, blank=True)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_events_a3f6fb39bf32a2b2c71f3f753be62db2e}{}\label{classmodels_1_1_events_a3f6fb39bf32a2b2c71f3f753be62db2e}
+\index{models\+::\+Events@{models\+::\+Events}!name@{name}}
+\index{name@{name}!models\+::\+Events@{models\+::\+Events}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}models.\+Events.\+name = models.\+Char\+Field(max\+\_\+length=50)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmodels_1_1_events_ae52223e512507d0807e70f52a424fe4a}{}\label{classmodels_1_1_events_ae52223e512507d0807e70f52a424fe4a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{models_8py}{models.\+py}\end{DoxyCompactItemize}

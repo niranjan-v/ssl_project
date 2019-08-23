@@ -1,0 +1,61 @@
+\hypertarget{classforms_1_1_feedback_form}{}\section{forms.\+Feedback\+Form Class Reference}
+\label{classforms_1_1_feedback_form}\index{forms.\+Feedback\+Form@{forms.\+Feedback\+Form}}
+
+
+Form for feedback, the fields in the Meta class are shown in the form.  
+
+
+
+
+Inheritance diagram for forms.\+Feedback\+Form\+:
+% FIG 0
+
+
+Collaboration diagram for forms.\+Feedback\+Form\+:
+% FIG 1
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classforms_1_1_feedback_form_ad2ca6f3b844aa3f80f8326428e83bacd}{course}
+\item 
+\hyperlink{classforms_1_1_feedback_form_a489414513306b7666bb4a9249ff2ad16}{feedback\+\_\+name}
+\item 
+\hyperlink{classforms_1_1_feedback_form_a5ccea176478e091bcaf31375ce6c53fa}{deadline\+\_\+date} = forms.\+Date\+Field(initial=datetime.\+date.\+today)
+\item 
+\hyperlink{classforms_1_1_feedback_form_aa0b66f54d93476e3eaf7ee49e33df1a4}{deadline\+\_\+time} = forms.\+Time\+Field(initial=\char`\"{}23\+:59\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Form for feedback, the fields in the Meta class are shown in the form. 
+
+\subsection{Member Data Documentation}
+\index{forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}!course@{course}}
+\index{course@{course}!forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}}
+\subsubsection[{\texorpdfstring{course}{course}}]{\setlength{\rightskip}{0pt plus 5cm}forms.\+Feedback\+Form.\+course\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classforms_1_1_feedback_form_ad2ca6f3b844aa3f80f8326428e83bacd}{}\label{classforms_1_1_feedback_form_ad2ca6f3b844aa3f80f8326428e83bacd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = forms.ModelChoiceField(queryset=Course.objects.all(),empty\_label=\textcolor{keywordtype}{None},
+2                                                         widget=forms.Select(attrs=\{\textcolor{stringliteral}{'class'}:\textcolor{stringliteral}{'form-control'}\})
+      )
+\end{DoxyCode}
+\index{forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}!deadline\+\_\+date@{deadline\+\_\+date}}
+\index{deadline\+\_\+date@{deadline\+\_\+date}!forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+date}{deadline_date}}]{\setlength{\rightskip}{0pt plus 5cm}forms.\+Feedback\+Form.\+deadline\+\_\+date = forms.\+Date\+Field(initial=datetime.\+date.\+today)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classforms_1_1_feedback_form_a5ccea176478e091bcaf31375ce6c53fa}{}\label{classforms_1_1_feedback_form_a5ccea176478e091bcaf31375ce6c53fa}
+\index{forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}!deadline\+\_\+time@{deadline\+\_\+time}}
+\index{deadline\+\_\+time@{deadline\+\_\+time}!forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}}
+\subsubsection[{\texorpdfstring{deadline\+\_\+time}{deadline_time}}]{\setlength{\rightskip}{0pt plus 5cm}forms.\+Feedback\+Form.\+deadline\+\_\+time = forms.\+Time\+Field(initial=\char`\"{}23\+:59\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classforms_1_1_feedback_form_aa0b66f54d93476e3eaf7ee49e33df1a4}{}\label{classforms_1_1_feedback_form_aa0b66f54d93476e3eaf7ee49e33df1a4}
+\index{forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}!feedback\+\_\+name@{feedback\+\_\+name}}
+\index{feedback\+\_\+name@{feedback\+\_\+name}!forms\+::\+Feedback\+Form@{forms\+::\+Feedback\+Form}}
+\subsubsection[{\texorpdfstring{feedback\+\_\+name}{feedback_name}}]{\setlength{\rightskip}{0pt plus 5cm}forms.\+Feedback\+Form.\+feedback\+\_\+name\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classforms_1_1_feedback_form_a489414513306b7666bb4a9249ff2ad16}{}\label{classforms_1_1_feedback_form_a489414513306b7666bb4a9249ff2ad16}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = forms.CharField(max\_length=20, widget=forms.TextInput(attrs=\{\textcolor{stringliteral}{'class'}:\textcolor{stringliteral}{'form-control'},
+2                                                                                 \textcolor{stringliteral}{'placeholder'}:\textcolor{stringliteral}{'Enter
+       feedback Name'}\}))
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/niranjan/\+Desktop/dox-\/proj-\/1/tcourse/\hyperlink{forms_8py}{forms.\+py}\end{DoxyCompactItemize}

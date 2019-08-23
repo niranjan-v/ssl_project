@@ -1,0 +1,35 @@
+\hypertarget{namespacestr__process}{}\section{str\+\_\+process Namespace Reference}
+\label{namespacestr__process}\index{str\+\_\+process@{str\+\_\+process}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacestr__process_aee722975291eff3a2c7c5d4b6874225d}{normalize\+\_\+query} (query\+\_\+string, findterms=re.\+compile(r\textquotesingle{}\char`\"{}(\mbox{[}$^\wedge$\char`\"{}\mbox{]}+)\char`\"{}$\vert$(\textbackslash{}S+)\textquotesingle{}).findall,  normspace=re.\+compile(r\textquotesingle{}\textbackslash{}s\{2,\}\textquotesingle{}).sub)
+\item 
+def \hyperlink{namespacestr__process_ae4839d3a6aa2ae8ff4bb1c3a6b915efe}{get\+\_\+query} (query\+\_\+string, search\+\_\+fields)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{str\+\_\+process@{str\+\_\+process}!get\+\_\+query@{get\+\_\+query}}
+\index{get\+\_\+query@{get\+\_\+query}!str\+\_\+process@{str\+\_\+process}}
+\subsubsection[{\texorpdfstring{get\+\_\+query(query\+\_\+string, search\+\_\+fields)}{get_query(query_string, search_fields)}}]{\setlength{\rightskip}{0pt plus 5cm}def str\+\_\+process.\+get\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{}]{query\+\_\+string, }
+\item[{}]{search\+\_\+fields}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacestr__process_ae4839d3a6aa2ae8ff4bb1c3a6b915efe}{}\label{namespacestr__process_ae4839d3a6aa2ae8ff4bb1c3a6b915efe}
+\begin{DoxyVerb}Returns a query, that is a combination of Q objects. That combination
+    aims to search keywords within a model by testing the given search fields.\end{DoxyVerb}
+ \index{str\+\_\+process@{str\+\_\+process}!normalize\+\_\+query@{normalize\+\_\+query}}
+\index{normalize\+\_\+query@{normalize\+\_\+query}!str\+\_\+process@{str\+\_\+process}}
+\subsubsection[{\texorpdfstring{normalize\+\_\+query(query\+\_\+string, findterms=re.\+compile(r\textquotesingle{}""([$^\wedge$""]+)""\texttt{"|}(\textbackslash{}\+S+)\textquotesingle{}).\+findall,  normspace=re.\+compile(r\textquotesingle{}\textbackslash{}s\lcurly{}2,\rcurly{}\textquotesingle{}).\+sub)}{normalize_query(query_string, findterms=re.compile(r'"([^"]+)"|(\textbackslash{}S+)').findall,  normspace=re.compile(r'\textbackslash{}s\{2,\}').sub)}}]{\setlength{\rightskip}{0pt plus 5cm}def str\+\_\+process.\+normalize\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{}]{query\+\_\+string, }
+\item[{}]{findterms = {\ttfamily re.compile(r\textquotesingle{}\char`\"{}(\mbox{[}$^\wedge$\char`\"{}\mbox{]}+)\char`\"{}$\vert$(\textbackslash{}S+)\textquotesingle{}).findall}, }
+\item[{}]{normspace = {\ttfamily re.compile(r\textquotesingle{}\textbackslash{}s\{2,\}\textquotesingle{}).sub}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacestr__process_aee722975291eff3a2c7c5d4b6874225d}{}\label{namespacestr__process_aee722975291eff3a2c7c5d4b6874225d}
+\begin{DoxyVerb}Splits the query string in invidual keywords, getting rid of unecessary spaces
+    and grouping quoted words together.
+\end{DoxyVerb}
+ 
